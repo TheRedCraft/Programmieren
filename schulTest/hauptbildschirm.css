@@ -1,0 +1,34 @@
+body {
+    background-color: aqua;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.menü {
+    border: 3px solid black;
+    box-shadow: 3px 3px 5px grey;
+    box-shadow: 5px grey;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+li {
+    margin-top: 10px;
+}
+a {
+    text-decoration: none;
+
+    color: red;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px grey;
+}
+
+.unten {
+    position: absolute;
+    bottom: 0;
+}

@@ -1,0 +1,39 @@
+.kasten {
+    font-size: 30px;
+    text-align: center;
+    background: #c2cfe4;
+    width: 500px;
+    height: 200px;
+    border: 20px solid #264b87;
+    border-radius: 15px;
+    margin: 30px auto;
+    box-shadow: inset 20px 10px 15px grey;
+}
+
+.zentriert {
+    margin: 0px auto;
+    text-align: center;
+}
+
+.ergebnis {
+    font-size: 40px;
+    background: white;
+    height: 120px;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 15px 15px 15px grey;
+}
+
+.lösung {
+    font-size: 100px;
+    margin-top: 50px;
+}
+
+.endebutton {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    width: 8rem;
+    background-color: red;
+    height: 3rem;
+}

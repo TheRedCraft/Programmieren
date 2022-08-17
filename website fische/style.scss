@@ -1,0 +1,236 @@
+
+
+.loading {
+    font-size: 6rem;
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$background: url('img/background-main.jpg');
+$scale: 150;
+$size: #{$scale}rem;
+$speed: #{$scale * 1000}ms;
+
+
+body {
+    background-image: $background;
+    background-size: $size;
+    background-repeat: repeat 0 0;
+    animation: infinteMove linear infinite $speed;
+}
+
+@keyframes infinteMove { 
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: $size $size;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$prime: #068fff;
+$second: #0c1016;
+
+
+svg{
+    position: absolute;
+    top: -4000px;
+    left: -4000px;
+}
+
+
+
+.bubble_button {
+    position: absolute;
+    bottom: 50%;
+    left: 45%;
+    #gooey-button{
+        width: 235px;
+        text-align: center;
+        height: 69px;
+        padding: 1rem;
+        font-size: 2rem;
+        border: none;
+        color: $second;
+        filter: url('#gooey');
+        position: relative;
+        background-color: $prime;
+
+        &:focus{
+            outline: none;
+        }
+
+        .bubbles{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+
+            .bubble{
+                background-color: $prime;
+                border-radius: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                z-index: -1;
+
+                @for $bubble from 1 through 10{
+                    &:nth-child(#{$bubble}) {
+                        $size: 25px;
+                        left: (random(200) + 10)+px;
+                        width: $size;
+                        height: $size;
+                        animation: move-#{$bubble} #{3 + $bubble*0.02}s infinite;
+                        animation-delay: #{$bubble*0.2}s;
+                    }
+                }
+
+            }
+        }
+    }               
+    @for $bubble from 1 through 10 {
+        @keyframes move-#{$bubble} {
+            0% {
+                transform: translate(0, 0);
+            }
+            99% {
+                transform: translate(0, -(random(80) + 50)+px);
+            }
+            100% {        
+                transform: translate(0, 0);
+                opacity: 0;
+            }
+        }
+    }
+}

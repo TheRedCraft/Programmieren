@@ -1,0 +1,204 @@
+html {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0c1016;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Roboto';
+  font-size: 10px;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.circle {
+  fill: white;
+  opacity: 0.1;
+}
+
+.stroke {
+  stroke: #00FFF1;
+  stroke-width: 1.5rem;
+  stroke-linecap: round;
+  fill: none;
+}
+
+.ball-left, .ball-right {
+  fill: #00FFF1;
+}
+
+.ball-right {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-animation: ballRight 1.8s ease-in-out alternate infinite;
+          animation: ballRight 1.8s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes ballRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  62% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  63% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, -7rem);
+            transform: translate(0, -7rem);
+  }
+}
+
+@keyframes ballRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  62% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  63% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, -7rem);
+            transform: translate(0, -7rem);
+  }
+}
+
+.ball-left {
+  opacity: 1;
+  -webkit-transform: translate(0, -7rem);
+          transform: translate(0, -7rem);
+  -webkit-animation: ballLeft 1.8s ease-in-out alternate infinite;
+          animation: ballLeft 1.8s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes ballLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(0, -7rem);
+            transform: translate(0, -7rem);
+  }
+  33% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  34% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes ballLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(0, -7rem);
+            transform: translate(0, -7rem);
+  }
+  33% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  34% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+.stroke {
+  -webkit-animation: stroke 1.8s ease-in-out alternate infinite;
+          animation: stroke 1.8s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes stroke {
+  0% {
+    stroke-dasharray: 150;
+    stroke-dashoffset: -150;
+  }
+  25% {
+    stroke-dasharray: 150;
+    stroke-dashoffset: -150;
+  }
+  26% {
+    stroke-dasharray: 150;
+    stroke-dashoffset: -140;
+  }
+  67% {
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+  }
+  68% {
+    stroke-dasharray: 150;
+    stroke-dashoffset: 160;
+  }
+  100% {
+    stroke-dasharray: 150;
+    stroke-dashoffset: 160;
+  }
+}
+
+@keyframes stroke {
+  0% {
+    stroke-dasharray: 150;
+    stroke-dashoffset: -150;
+  }
+  25% {
+    stroke-dasharray: 150;
+    stroke-dashoffset: -150;
+  }
+  26% {
+    stroke-dasharray: 150;
+    stroke-dashoffset: -140;
+  }
+  67% {
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+  }
+  68% {
+    stroke-dasharray: 150;
+    stroke-dashoffset: 160;
+  }
+  100% {
+    stroke-dasharray: 150;
+    stroke-dashoffset: 160;
+  }
+}
+/*# sourceMappingURL=style.css.map */

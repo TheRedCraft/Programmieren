@@ -1,0 +1,32 @@
+//Grundaufbau Anfang
+$prime: #FF6E48;
+$second: #0C1016;
+$hint: #121821;
+
+$glow1: #00ffff;
+$glow2: #ff0072;
+
+body {
+    background-color: black;
+    font-family: 'Roboto';
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+//Grundaufbau Ende
+
+
+p {
+    font-size: 2rem;
+    color: white;
+    max-width: 40rem;
+    width: 80%;
+    line-height: 1.6rem;
+}
+
+mark {
+    box-decoration-break: clone;
+    background: transparent;
+}

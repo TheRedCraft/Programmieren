@@ -1,0 +1,96 @@
+body {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0c1016;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Roboto';
+  font-size: 10px;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.submit {
+  margin-top: 200px;
+  margin-left: 200px;
+  padding: 1rem 2rem 1rem 2rem;
+  border: none;
+  background-color: orange;
+  color: white;
+  font-size: 2rem;
+  width: 20rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 1rem;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.submit:hover, .submit:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+.submit img {
+  margin: 0 0 0 2rem;
+  width: 2.5rem;
+  offset-path: path("m 10.3 17.4 c 110 -10 130 -30 130 -100");
+}
+
+.test.done {
+  color: #0c1016;
+  background-color: #63F3AB;
+}
+
+.test.active img {
+  -webkit-animation: move 1s forwards ease-in-out;
+          animation: move 1s forwards ease-in-out;
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    offset-distance: 0%;
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    offset-distance: 100%;
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    offset-distance: 0%;
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    offset-distance: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

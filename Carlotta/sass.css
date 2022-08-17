@@ -1,0 +1,32 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: url("img/background2.jpg");
+  background-size: 50rem;
+  background-repeat: repeat 0 0;
+  -webkit-animation: infinteMove linear infinite 50000ms;
+          animation: infinteMove linear infinite 50000ms;
+}
+
+@-webkit-keyframes infinteMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50rem 50rem;
+  }
+}
+
+@keyframes infinteMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50rem 50rem;
+  }
+}
+/*# sourceMappingURL=sass.css.map */

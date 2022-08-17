@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 100px;
+    position: absolute;
+    top: 100px;
+    right: 910px;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    right: 910px;
+    bottom: 100px;
+}
+.img-card img {
+    height: 900px;
+
+}

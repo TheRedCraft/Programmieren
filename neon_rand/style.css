@@ -1,0 +1,77 @@
+body {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0c1016;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Roboto';
+  font-size: 10px;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card {
+  width: 250px;
+  height: 350px;
+  position: relative;
+  z-index: 2;
+  border-radius: 20px;
+}
+
+.card .content {
+  width: 100%;
+  height: 100%;
+  background-color: #0c1016;
+  border-radius: 15px;
+}
+
+.card::before, .card::after {
+  content: "";
+  width: 260px;
+  height: 360px;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  border-radius: 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#ff00aa), to(#00FFF1));
+  background-image: linear-gradient(0, #ff00aa, #00FFF1);
+  background-size: 100% 200%;
+  background-position: center center;
+  top: -5px;
+  left: -5px;
+  -webkit-animation: spin 3000ms infinite alternate;
+          animation: spin 3000ms infinite alternate;
+}
+
+.card::after {
+  -webkit-filter: blur(125px);
+          filter: blur(125px);
+}
+
+@-webkit-keyframes spin {
+  0% {
+    background-position: top center;
+  }
+  100% {
+    background-position: bottom center;
+  }
+}
+
+@keyframes spin {
+  0% {
+    background-position: top center;
+  }
+  100% {
+    background-position: bottom center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

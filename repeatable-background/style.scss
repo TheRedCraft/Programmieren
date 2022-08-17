@@ -1,0 +1,41 @@
+$prime: #ff6e48;
+$ciBlue: #00fff1;
+$ciRed: #ff00aa;
+$ciGreen: #46fcb4;
+$second: #0c1016;
+
+body,
+html {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 10px;
+	margin: 0;
+	padding: 0;
+	color: $ciBlue;
+	box-sizing: border-box;
+}
+
+$background: url('img/background3.jpg');
+$scale: 10;
+$size: #{$scale}rem;
+$speed: #{$scale * 200}ms;
+
+
+body {
+    background-image: $background;
+    background-size: $size;
+    background-repeat: repeat 0 0;
+    animation: infinteMove linear infinite $speed;
+}
+
+@keyframes infinteMove { 
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: $size $size;
+    }
+}

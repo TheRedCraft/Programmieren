@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styleCSS.css">
+</head>
+<body>
+
+  <form>
+    <label for="email">Email</label>
+    <input type="email" id="email">
+    <label for="pass">Passwort</label>
+    <input class="passwortinput" id="password">
+    <input type="checkbox" value="lsRememberMe" id="rememberMe">
+    <label for="rememberMe">Remember me</label>
+    <input type="submit" value="Login" onclick="lsRememberMe()">
+  </form>
+
+
+
+    <form>
+        <label for="myname">Name</label>
+        <input type="myname" id="myname">
+        <label for="nächstesDatum">Das nächste Datum ist:</label>
+        <div type="nächstesDatum" id="nächstesDatum">1.1.2009</div>
+        <label for="dropdown">Absagen?</label>
+        <br>
+        <div class="dropdown" type="dropdown" id="dropdown">
+          <button onclick="myFunction()" class="dropbtn" type="button">Hier klicken</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a onclick="setja()">Ja</a>
+            <a onclick="setnein()">Nein</a>
+          </div>
+        </div>
+
+          <input type="checkbox" value="lsRememberMe" id="rememberMe">
+          <label for="rememberMe">Remember me</label>
+          <input type="submit" value="Login" onclick="lsRememberMe()">
+    </form>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

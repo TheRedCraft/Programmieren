@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rechen Test einfach</title>
+    <link rel="stylesheet" href="rechentesteinfach.css">
+    <script src="rechentesteinfach.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body style="background-color: silver;">
+
+    <div class="kasten" onclick="stelleAufgabe()">
+        <p id="Frage">Spiel Starten</p>
+        <p id="Zeit">Klicke Hier und löse die Aufgaben</p>
+
+    </div>
+
+    <button class="endebutton" onclick="spielendetestenbutton()" id="endebutton">Spiel beenden</button>
+
+    <div class="zentriert">
+        <form onsubmit="return pruefeEingabe()">
+            <input type="text" id="eingabe" class="ergebnis" autocomplete="off">
+        </form>
+    </div>
+    <p id="lösung" class="zentriert lösung">Lösung</p>
+
+    
+    
+</body>
+</html>

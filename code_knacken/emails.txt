@@ -1,0 +1,13 @@
+let emails = [
+    'albert.einstein@hacker-email.com',
+    'grace.hopper@hacker-email.com',
+    'marie.curie@hacker-email.com',
+    'konrad.zuse@hacker-email.com',
+    'stephanie-kwolek@hacker-email.com',
+    'carl-friedrich.gauss@hacker-email.com',
+    'shirley-ann.jackson@hacker-email.com',
+    'gertrude-belle.elion@hacker-email.com',
+    'steve.wozniak@hacker-email.com',
+    'rudolf.bayer@hacker-email.com',
+    'ada.lovelace@hacker-email.com'
+];

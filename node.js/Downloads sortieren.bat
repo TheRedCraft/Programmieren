@@ -1,0 +1,2 @@
+node ./fs.js
+pause

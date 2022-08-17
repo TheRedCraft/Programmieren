@@ -1,0 +1,41 @@
+//Grundaufbau Anfang
+$prime: #FF6E48;
+$second: #0C1016;
+$hint: #121821;
+
+$glow1: #00ffff;
+$glow2: #ff0072;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    width: 100%;
+    height: 100%;
+    background-color: $second;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+//Grundaufbau Ende
+
+
+.animation {
+    animation: blink 1s infinite;
+    font-size: 8rem;
+}
+
+@keyframes blink {
+    0% {
+        color: black;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: black;
+    }
+}

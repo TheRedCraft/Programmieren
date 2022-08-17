@@ -1,0 +1,83 @@
+//Grundaufbau Anfang
+$prime: #FF6E48;
+$second: #0C1016;
+$hint: #121821;
+
+$glow1: #00ffff;
+$glow2: #ff0072;
+
+
+$prime: #ff6e48;
+$ciBlue: #00FFF1;
+$ciRed: #ff00aa;
+$ciGreen: #46fcb4;
+$second: #0c1016;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+//Grundaufbau Ende
+
+.input {
+    margin-top: 100px;
+}
+
+
+
+
+
+
+$width: 200px;
+$height: 100px;
+$borderSize: 20px;
+$borderRadius: 20px;
+
+.card {
+    width: $width;
+    height: $height;
+    position: relative;
+    z-index: 2;
+    border-radius: $borderRadius;
+
+    .content {
+        width: 100%;
+        height: 100%;
+        background-color: $second;
+        border-radius: $borderRadius - $borderSize;
+    }
+    &::before, &::after {
+        content: "";
+        width: $width + $borderSize*2;
+        height: $height + $borderSize*2;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        border-radius: $borderRadius;
+        background-image: linear-gradient(0, $ciRed, $ciBlue);
+        background-size: 100% 200%;
+        background-position: center center;
+        top: -$borderSize;
+        left: -$borderSize + 3;
+        animation: spin 3000ms infinite alternate;
+    }
+    &::after {
+        filter: blur($width/2);
+    }
+@keyframes spin {
+    0% {
+        background-position: top center;
+    }
+    100% {
+        background-position: bottom center;
+    }
+}
+}

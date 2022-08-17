@@ -1,0 +1,15 @@
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+body {
+    background-color: rgb(184, 97, 211);
+}
+
