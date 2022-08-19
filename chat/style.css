@@ -1,24 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .input {
@@ -32,14 +22,12 @@ body {
   z-index: 2;
   border-radius: 20px;
 }
-
 .card .content {
   width: 100%;
   height: 100%;
   background-color: #0c1016;
   border-radius: 0px;
 }
-
 .card::before, .card::after {
   content: "";
   width: 240px;
@@ -48,7 +36,6 @@ body {
   position: absolute;
   z-index: -1;
   border-radius: 20px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(#ff00aa), to(#00FFF1));
   background-image: linear-gradient(0, #ff00aa, #00FFF1);
   background-size: 100% 200%;
   background-position: center center;
@@ -57,12 +44,9 @@ body {
   -webkit-animation: spin 3000ms infinite alternate;
           animation: spin 3000ms infinite alternate;
 }
-
 .card::after {
-  -webkit-filter: blur(100px);
-          filter: blur(100px);
+  filter: blur(100px);
 }
-
 @-webkit-keyframes spin {
   0% {
     background-position: top center;
@@ -71,7 +55,6 @@ body {
     background-position: bottom center;
   }
 }
-
 @keyframes spin {
   0% {
     background-position: top center;
@@ -79,5 +62,4 @@ body {
   100% {
     background-position: bottom center;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

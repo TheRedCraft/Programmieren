@@ -24,7 +24,6 @@ ul#eintraege {
   padding: 0px;
   list-style-type: none;
 }
-
 ul#eintraege:hover {
   cursor: pointer;
 }
@@ -32,7 +31,6 @@ ul#eintraege:hover {
 ul#eintraege li {
   border-bottom: 1px solid #a9a9a9;
   padding: 10px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#e3e3e3));
   background-image: linear-gradient(#f9f9f9, #e3e3e3);
 }
 
@@ -45,5 +43,4 @@ ul#eintraege li:last-child {
 ul#eintraege li:first-child {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
