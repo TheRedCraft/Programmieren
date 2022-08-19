@@ -1,0 +1,118 @@
+body,
+html {
+  align-items: center;
+  background-color: #0c1016;
+  display: flex;
+  font-family: "Roboto";
+  font-size: 10px;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  padding: 0 2rem 0 2rem;
+  transition: 150ms all;
+  background-color: #1e2837;
+}
+button.dislike .icon svg.prime {
+  -webkit-animation: dislike 550ms forwards ease-in-out;
+          animation: dislike 550ms forwards ease-in-out;
+}
+button.active {
+  background-color: #00fff1;
+}
+button.active .counter {
+  color: #0c1016;
+}
+button.active .icon svg {
+  color: #0c1016;
+}
+button.active .icon svg.prime {
+  -webkit-animation: like 550ms forwards ease-in-out;
+          animation: like 550ms forwards ease-in-out;
+}
+button .counter {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  padding: 2rem 0 2rem 2rem;
+  transition: 150ms all;
+}
+button .icon {
+  padding: 1rem;
+  transition: 150ms all;
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+}
+button .icon svg {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+}
+button .icon svg.normal {
+  z-index: 1;
+  opacity: 0.5;
+}
+button .icon svg.prime {
+  z-index: 2;
+}
+
+@-webkit-keyframes dislike {
+  0% {
+    color: #0c1016;
+    transform: translate(0, 0%);
+  }
+  100% {
+    color: #00fff1;
+    transform: translate(0, 300%) scale(0);
+  }
+}
+
+@keyframes dislike {
+  0% {
+    color: #0c1016;
+    transform: translate(0, 0%);
+  }
+  100% {
+    color: #00fff1;
+    transform: translate(0, 300%) scale(0);
+  }
+}
+@-webkit-keyframes like {
+  0% {
+    color: white;
+    transform: translate(0, 0%);
+  }
+  100% {
+    color: #00fff1;
+    transform: translate(0, -300%) scale(0);
+  }
+}
+@keyframes like {
+  0% {
+    color: white;
+    transform: translate(0, 0%);
+  }
+  100% {
+    color: #00fff1;
+    transform: translate(0, -300%) scale(0);
+  }
+}/*# sourceMappingURL=style.css.map */
