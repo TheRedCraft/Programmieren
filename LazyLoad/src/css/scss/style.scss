@@ -1,0 +1,45 @@
+$prime: #ff6e48;
+$ciBlue: #00fff1;
+$ciRed: #ff00aa;
+$ciGreen: #46fcb4;
+$second: #0c1016;
+
+body,
+html {
+	align-items: center;
+	background-color: $second;
+	display: flex;
+	font-family: 'Roboto';
+	font-size: 10px;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+* {
+	box-sizing: border-box;
+}
+
+section {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		width: 250px;
+		height: 350px;
+		border-radius: 50px;
+		padding: 2px;
+		transform: scale(1);
+		transition: all 500ms;
+		opacity: 1;
+
+		&.lazy-loading {
+			opacity: 0;
+			transform: scale(0);
+		}
+	}
+}
