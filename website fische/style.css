@@ -71,7 +71,7 @@ svg {
   z-index: -1;
 }
 .bubble_button #gooey-button .bubbles .bubble:nth-child(1) {
-  left: 14px;
+  left: 67px;
   width: 25px;
   height: 25px;
   -webkit-animation: move-1 3.02s infinite;
@@ -80,7 +80,7 @@ svg {
           animation-delay: 0.2s;
 }
 .bubble_button #gooey-button .bubbles .bubble:nth-child(2) {
-  left: 11px;
+  left: 74px;
   width: 25px;
   height: 25px;
   -webkit-animation: move-2 3.04s infinite;
@@ -89,7 +89,7 @@ svg {
           animation-delay: 0.4s;
 }
 .bubble_button #gooey-button .bubbles .bubble:nth-child(3) {
-  left: 188px;
+  left: 206px;
   width: 25px;
   height: 25px;
   -webkit-animation: move-3 3.06s infinite;
@@ -98,7 +98,7 @@ svg {
           animation-delay: 0.6s;
 }
 .bubble_button #gooey-button .bubbles .bubble:nth-child(4) {
-  left: 71px;
+  left: 187px;
   width: 25px;
   height: 25px;
   -webkit-animation: move-4 3.08s infinite;
@@ -107,7 +107,7 @@ svg {
           animation-delay: 0.8s;
 }
 .bubble_button #gooey-button .bubbles .bubble:nth-child(5) {
-  left: 101px;
+  left: 85px;
   width: 25px;
   height: 25px;
   -webkit-animation: move-5 3.1s infinite;
@@ -116,7 +116,7 @@ svg {
           animation-delay: 1s;
 }
 .bubble_button #gooey-button .bubbles .bubble:nth-child(6) {
-  left: 119px;
+  left: 72px;
   width: 25px;
   height: 25px;
   -webkit-animation: move-6 3.12s infinite;
@@ -125,7 +125,7 @@ svg {
           animation-delay: 1.2s;
 }
 .bubble_button #gooey-button .bubbles .bubble:nth-child(7) {
-  left: 74px;
+  left: 143px;
   width: 25px;
   height: 25px;
   -webkit-animation: move-7 3.14s infinite;
@@ -134,7 +134,7 @@ svg {
           animation-delay: 1.4s;
 }
 .bubble_button #gooey-button .bubbles .bubble:nth-child(8) {
-  left: 148px;
+  left: 98px;
   width: 25px;
   height: 25px;
   -webkit-animation: move-8 3.16s infinite;
@@ -143,7 +143,7 @@ svg {
           animation-delay: 1.6s;
 }
 .bubble_button #gooey-button .bubbles .bubble:nth-child(9) {
-  left: 33px;
+  left: 159px;
   width: 25px;
   height: 25px;
   -webkit-animation: move-9 3.18s infinite;
@@ -152,7 +152,7 @@ svg {
           animation-delay: 1.8s;
 }
 .bubble_button #gooey-button .bubbles .bubble:nth-child(10) {
-  left: 34px;
+  left: 47px;
   width: 25px;
   height: 25px;
   -webkit-animation: move-10 3.2s infinite;
@@ -165,7 +165,7 @@ svg {
     transform: translate(0, 0);
   }
   99% {
-    transform: translate(0, -90px);
+    transform: translate(0, -98px);
   }
   100% {
     transform: translate(0, 0);
@@ -177,7 +177,7 @@ svg {
     transform: translate(0, 0);
   }
   99% {
-    transform: translate(0, -90px);
+    transform: translate(0, -98px);
   }
   100% {
     transform: translate(0, 0);
@@ -189,7 +189,7 @@ svg {
     transform: translate(0, 0);
   }
   99% {
-    transform: translate(0, -61px);
+    transform: translate(0, -116px);
   }
   100% {
     transform: translate(0, 0);
@@ -201,7 +201,7 @@ svg {
     transform: translate(0, 0);
   }
   99% {
-    transform: translate(0, -61px);
+    transform: translate(0, -116px);
   }
   100% {
     transform: translate(0, 0);
@@ -213,7 +213,7 @@ svg {
     transform: translate(0, 0);
   }
   99% {
-    transform: translate(0, -82px);
+    transform: translate(0, -70px);
   }
   100% {
     transform: translate(0, 0);
@@ -225,7 +225,7 @@ svg {
     transform: translate(0, 0);
   }
   99% {
-    transform: translate(0, -82px);
+    transform: translate(0, -70px);
   }
   100% {
     transform: translate(0, 0);
@@ -237,7 +237,7 @@ svg {
     transform: translate(0, 0);
   }
   99% {
-    transform: translate(0, -89px);
+    transform: translate(0, -88px);
   }
   100% {
     transform: translate(0, 0);
@@ -249,7 +249,7 @@ svg {
     transform: translate(0, 0);
   }
   99% {
-    transform: translate(0, -89px);
+    transform: translate(0, -88px);
   }
   100% {
     transform: translate(0, 0);
@@ -261,7 +261,7 @@ svg {
     transform: translate(0, 0);
   }
   99% {
-    transform: translate(0, -78px);
+    transform: translate(0, -57px);
   }
   100% {
     transform: translate(0, 0);
@@ -273,7 +273,7 @@ svg {
     transform: translate(0, 0);
   }
   99% {
-    transform: translate(0, -78px);
+    transform: translate(0, -57px);
   }
   100% {
     transform: translate(0, 0);
@@ -285,7 +285,7 @@ svg {
     transform: translate(0, 0);
   }
   99% {
-    transform: translate(0, -54px);
+    transform: translate(0, -75px);
   }
   100% {
     transform: translate(0, 0);
@@ -297,7 +297,7 @@ svg {
     transform: translate(0, 0);
   }
   99% {
-    transform: translate(0, -54px);
+    transform: translate(0, -75px);
   }
   100% {
     transform: translate(0, 0);
@@ -309,7 +309,7 @@ svg {
     transform: translate(0, 0);
   }
   99% {
-    transform: translate(0, -92px);
+    transform: translate(0, -119px);
   }
   100% {
     transform: translate(0, 0);
@@ -321,7 +321,7 @@ svg {
     transform: translate(0, 0);
   }
   99% {
-    transform: translate(0, -92px);
+    transform: translate(0, -119px);
   }
   100% {
     transform: translate(0, 0);
@@ -333,7 +333,7 @@ svg {
     transform: translate(0, 0);
   }
   99% {
-    transform: translate(0, -90px);
+    transform: translate(0, -92px);
   }
   100% {
     transform: translate(0, 0);
@@ -345,7 +345,7 @@ svg {
     transform: translate(0, 0);
   }
   99% {
-    transform: translate(0, -90px);
+    transform: translate(0, -92px);
   }
   100% {
     transform: translate(0, 0);
@@ -357,7 +357,7 @@ svg {
     transform: translate(0, 0);
   }
   99% {
-    transform: translate(0, -94px);
+    transform: translate(0, -52px);
   }
   100% {
     transform: translate(0, 0);
@@ -369,7 +369,7 @@ svg {
     transform: translate(0, 0);
   }
   99% {
-    transform: translate(0, -94px);
+    transform: translate(0, -52px);
   }
   100% {
     transform: translate(0, 0);
@@ -381,7 +381,7 @@ svg {
     transform: translate(0, 0);
   }
   99% {
-    transform: translate(0, -107px);
+    transform: translate(0, -81px);
   }
   100% {
     transform: translate(0, 0);
@@ -393,7 +393,7 @@ svg {
     transform: translate(0, 0);
   }
   99% {
-    transform: translate(0, -107px);
+    transform: translate(0, -81px);
   }
   100% {
     transform: translate(0, 0);
