@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/scss/style.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/scss/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+	</head>
+	<body>
+		<aside class="sitebar">
+			<nav class="navigation"></nav>
+		</aside>
 
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+			<defs>
+				<filter id="gooey">
+					<feGaussianBlur
+						in="SourceGraphic"
+						stdDeviation="5"
+						result="blur" />
+					<feColorMatrix
+						in="blur"
+						type="matrix"
+						values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+						result="highContrastGraphic" />
+					<feComposite
+						in="SourceGraphic"
+						in2="highContrastGraphic"
+						operator="atop" />
+				</filter>
+			</defs>
+		</svg>
 
-
-    <script src="js/main.js"></script>
-</body>
+		<script src="js/main.js"></script>
+	</body>
 </html>
