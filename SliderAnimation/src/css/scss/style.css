@@ -1,0 +1,71 @@
+body,
+html {
+  align-items: center;
+  background-color: #0c1016;
+  display: flex;
+  font-family: "Roboto";
+  font-size: 10px;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slider-outer-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.slider-outer-wrapper .slider-inner-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-outer-wrapper .slider-inner-wrapper.is-animating {
+  transition: all 400ms;
+}
+.slider-outer-wrapper .slider-inner-wrapper .slide {
+  color: #ff6e48;
+  font-size: 8rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.slider-outer-wrapper .slider-inner-wrapper .slide:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.slider-outer-wrapper .navigation {
+  z-index: 2;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.slider-outer-wrapper .navigation button {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border: none;
+  background-color: white;
+  border-radius: 15px;
+  margin: 0 20px 0 0;
+}
+.slider-outer-wrapper .navigation button.bullet-active {
+  background-color: #ff6e48;
+}
+.slider-outer-wrapper .navigation button:focus {
+  outline: none;
+}
+.slider-outer-wrapper .navigation button:last-child {
+  margin: 0 0 0 0;
+}/*# sourceMappingURL=style.css.map */

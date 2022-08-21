@@ -1,0 +1,81 @@
+$prime: #ff6e48;
+$second: #0c1016;
+
+// ###############################################
+// ###############################################
+// START Boilerplate (not Important for the Tutorial)
+
+body,
+html {
+	align-items: center;
+	background-color: $second;
+	display: flex;
+	font-family: 'Roboto';
+	font-size: 10px;
+	height: 100%;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+* {
+	box-sizing: border-box;
+}
+
+// END Boilerplate (not Important for the Tutorial)
+// ###############################################
+// ###############################################
+
+.slider-outer-wrapper {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	.slider-inner-wrapper {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&.is-animating {
+			transition: all 400ms;
+		}
+		.slide {
+			color: $prime;
+			font-size: 8rem;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex: 1;
+			&:nth-child(odd) {
+				background-color: rgba(255, 255, 255, 0.05);
+			}
+		}
+	}
+	.navigation {
+		z-index: 2;
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		button {
+			cursor: pointer;
+			width: 15px;
+			height: 15px;
+			border: none;
+			background-color: white;
+			border-radius: 15px;
+			margin: 0 20px 0 0;
+			&.bullet-active {
+				background-color: $prime;
+			}
+			&:focus {
+				outline: none;
+			}
+			&:last-child {
+				margin: 0 0 0 0;
+			}
+		}
+	}
+}
