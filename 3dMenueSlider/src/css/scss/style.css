@@ -1,0 +1,222 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0c1016;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  color: #00fff1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3.8rem;
+  line-height: 1.1em;
+}
+
+p {
+  opacity: 0.6;
+  font-size: 1.8rem;
+  line-height: 1.7em;
+  text-align: justify;
+}
+
+.wrapper {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  perspective: 250rem;
+  transform-style: preserve-3d;
+}
+.wrapper.active main {
+  transform: translate3d(0, 0, -85rem);
+}
+.wrapper.active main .page {
+  filter: blur(5px);
+  overflow: hidden;
+  border-radius: 5rem;
+}
+.wrapper.active aside {
+  -webkit-animation: open 800ms forwards;
+          animation: open 800ms forwards;
+}
+.wrapper.active .menu .content {
+  background: white;
+}
+.wrapper.active .menu .sidebar {
+  -webkit-animation: close 800ms forwards;
+          animation: close 800ms forwards;
+}
+.wrapper aside {
+  min-height: 50rem;
+  position: fixed;
+  top: 50%;
+  left: 9%;
+  padding: 1rem;
+  z-index: 1;
+  background-color: #ff00aa;
+  border-radius: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: close 800ms forwards;
+          animation: close 800ms forwards;
+}
+.wrapper aside nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper aside nav a {
+  width: 100%;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.wrapper aside nav a img {
+  height: 2rem;
+  width: 2rem;
+}
+.wrapper main {
+  width: 100vw;
+  z-index: 2;
+  height: 100vh;
+  position: relative;
+  transition: 800ms all;
+}
+.wrapper main .page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 5rem;
+  width: 100vw;
+  overflow-x: hidden;
+  height: 100vh;
+  background: white;
+  transition: 250ms all;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper main .page article {
+  width: 90%;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.wrapper .menu {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, 0);
+  border: none;
+  background: transparent;
+  width: 1.5rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.wrapper .menu .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1.2rem;
+  height: 2rem;
+  background-color: #0c1016;
+  border-radius: 0.2rem;
+  transition: 250ms all;
+}
+.wrapper .menu .sidebar {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0.5rem;
+  height: 1.5rem;
+  background-color: #ff00aa;
+  border-radius: 0.2rem;
+  -webkit-animation: open 800ms forwards;
+          animation: open 800ms forwards;
+}
+
+@-webkit-keyframes open {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -50%, -50rem);
+  }
+  50% {
+    z-index: 1;
+    transform: translate3d(-135%, -50%, 0);
+  }
+  100% {
+    opacity: 1;
+    z-index: 5;
+    transform: translate3d(35%, -50%, 25rem);
+  }
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -50%, -50rem);
+  }
+  50% {
+    z-index: 1;
+    transform: translate3d(-135%, -50%, 0);
+  }
+  100% {
+    opacity: 1;
+    z-index: 5;
+    transform: translate3d(35%, -50%, 25rem);
+  }
+}
+@-webkit-keyframes close {
+  0% {
+    opacity: 1;
+    z-index: 5;
+    transform: translate3d(35%, -50%, 25rem);
+  }
+  50% {
+    z-index: 1;
+    transform: translate3d(-135%, -50%, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -50%, -50rem);
+  }
+}
+@keyframes close {
+  0% {
+    opacity: 1;
+    z-index: 5;
+    transform: translate3d(35%, -50%, 25rem);
+  }
+  50% {
+    z-index: 1;
+    transform: translate3d(-135%, -50%, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -50%, -50rem);
+  }
+}/*# sourceMappingURL=style.css.map */
