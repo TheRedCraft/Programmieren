@@ -1,0 +1,71 @@
+@import '_preset';
+
+$prime: #ff6e48;
+$ciBlue: #00fff1;
+$ciRed: #ff00aa;
+$ciGreen: #46fcb4;
+$second: #0c1016;
+
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	.nav-slider {
+		position: absolute;
+		bottom: -1rem;
+		left: 0;
+		width: 1rem;
+		height: 0.3rem;
+		background-color: $ciGreen;
+		transform-origin: left center;
+
+		&.animation {
+			transition: all 250ms;
+		}
+	}
+
+	ul {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		li {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+			margin: 0 3rem 0 0;
+
+			&:last-child {
+				margin: 0 0 0 0;
+			}
+
+			a {
+				color: white;
+				font-size: 1.8rem;
+				cursor: pointer;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: row;
+				transition: all 250ms;
+
+				&.active {
+					color: $ciGreen;
+				}
+				&:hover {
+					color: $ciGreen;
+				}
+				img {
+					width: 2rem;
+					margin: 0 1rem 0 0;
+				}
+			}
+		}
+	}
+}
