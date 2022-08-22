@@ -1,0 +1,94 @@
+@import '_preset';
+
+$prime: #ff6e48;
+$ciBlue: #00fff1;
+$ciRed: #ff00aa;
+$ciWhite: #ffffff;
+$ciGreen: #46fcb4;
+$second: #0c1016;
+
+body,
+html {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $second;
+	font-size: 10px;
+	margin: 0;
+	padding: 0;
+	color: $ciBlue;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+// Tutorial Start
+.gooey-filter {
+	visibility: hidden;
+	position: absolute;
+	top: -100%;
+	left: -100%;
+}
+
+$size: 5rem;
+
+.loader {
+	position: relative;
+	.static,
+	.dots {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-gap: $size * 0.5;
+		padding: 0 $size * 1.5 0 $size * 1.5;
+	}
+	.static {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		.dot {
+			animation: color 5000ms ease-in-out infinite alternate;
+		}
+	}
+	.dots {
+		filter: url('#goo');
+		.dot {
+			background-color: $ciBlue;
+			&.animated {
+				position: absolute;
+				top: 0;
+				left: 0;
+				animation: move 1500ms ease-in-out infinite alternate;
+			}
+		}
+	}
+	.dot {
+		width: $size;
+		height: $size;
+		border-radius: $size;
+	}
+}
+
+@keyframes move {
+	0% {
+		transform: translate(-10%, 0);
+	}
+	100% {
+		transform: translate(770%, 0);
+	}
+}
+
+@keyframes color {
+	0% {
+		background-color: $ciBlue;
+	}
+	50% {
+		background-color: $ciGreen;
+	}
+	100% {
+		background-color: $ciRed;
+	}
+}
