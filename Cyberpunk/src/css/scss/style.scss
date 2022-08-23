@@ -1,0 +1,58 @@
+@import '_preset';
+
+$prime: #ff6e48;
+$second: #0c1016;
+$yellow: #fbf665;
+$blue: #02d7f2;
+$pink: #ff00a0;
+
+@font-face {
+	font-family: 'Cyberpunk';
+	src: url('https://assets.codepen.io/907368/cyberpunk.ttf')
+		format('truetype');
+	font-weight: 200;
+}
+.canvas-animation {
+	position: absolute;
+	z-index: 1;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+.glitch {
+	z-index: 2;
+	color: white;
+	font-size: 10rem;
+	position: relative;
+
+	&::after {
+		content: attr(data-trick);
+		position: absolute;
+		top: 0;
+		left: 0.5rem;
+		color: $yellow;
+		overflow: hidden;
+		text-shadow: -0.5rem 0 $pink;
+		clip: rect(0, 90rem, 0, 0);
+		animation: noise 2s infinite linear alternate-reverse;
+	}
+	&::before {
+		content: attr(data-trick);
+		position: absolute;
+		top: 0;
+		left: -1rem;
+		color: $yellow;
+		overflow: hidden;
+		text-shadow: 0.3rem 0 $blue;
+		clip: rect(0, 90rem, 0, 0);
+		animation: noise 4s infinite linear alternate-reverse;
+	}
+}
+@keyframes noise {
+	$steps: 25;
+	@for $i from 0 through $steps {
+		#{ percentage($i * (1/$steps))} {
+			clip: rect(random(12) + rem, 99.99rem, random(12) + rem, 0);
+		}
+	}
+}
