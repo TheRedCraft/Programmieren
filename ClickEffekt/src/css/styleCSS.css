@@ -1,0 +1,61 @@
+body,
+html {
+	background: #ff6600;
+	margin: 0;
+	padding: 0;
+}
+
+aside {
+	width: 100px;
+	background: #ffffff;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+aside ul {
+	margin: 200px 0 0 0;
+	padding: 0 0 0 0;
+	width: 500px;
+}
+
+aside ul li {
+	width: 100%;
+	padding: 15px 0 15px 0;
+	text-align: center;
+	font-size: 15px;
+	opacity: 0;
+	transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+aside .ud_klick_dot {
+	background: #ff6600;
+	border-radius: 1500px;
+	position: absolute;
+	animation: fadein 300ms cubic-bezier(0.42, 0, 0.58, 1);
+	transform: translate(-50%, -50%);
+}
+
+aside.aktiv_menu {
+	width: 500px;
+}
+
+aside.aktiv_menu > ul li {
+	opacity: 1;
+}
+
+@keyframes fadein {
+	from {
+		width: 0;
+		height: 0;
+		opacity: 1;
+	}
+	to {
+		width: 700px;
+		height: 700px;
+		opacity: 0;
+	}
+}
