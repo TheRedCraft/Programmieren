@@ -1,0 +1,65 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #00fff1;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.skillbars {
+  width: 80%;
+}
+.skillbars .skillbar {
+  width: 100%;
+  height: 5rem;
+  border: #dedede 0.1rem solid;
+  border-radius: 1rem;
+  position: relative;
+  cursor: default;
+  margin: 0 0 3rem 0;
+}
+.skillbars .skillbar.show .skillbar-label {
+  color: #dedede;
+}
+.skillbars .skillbar:hover .skillbar-label {
+  transform: translate(0, -0.5rem);
+  color: #dedede;
+}
+.skillbars .skillbar:hover .skillbar-bg {
+  transform: translate(0, -0.5rem);
+  box-shadow: 0 1rem 3.5rem #dedede;
+}
+.skillbars .skillbar .skillbar-label {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  z-index: 5;
+  transition: all 250ms;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333333;
+}
+.skillbars .skillbar .skillbar-bg {
+  position: absolute;
+  top: 0;
+  transition: all 250ms;
+  transition-timing-function: ease-in-out;
+  left: 0;
+  z-index: 1;
+  background-color: #333333;
+  border-radius: 1rem;
+  width: 0;
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */
