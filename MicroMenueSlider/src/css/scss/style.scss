@@ -1,0 +1,73 @@
+@import '_preset';
+
+$prime: #00fff1;
+$second: #0c1016;
+
+.menu-slider-container {
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	padding: 0.5rem;
+	background-color: $prime;
+	border-radius: 6rem;
+	position: relative;
+
+	.menu-slider-icon {
+		border: none;
+		background: transparent;
+		position: relative;
+		z-index: 2;
+		z-index: 2;
+		width: 5rem;
+		height: 5rem;
+		border-radius: 5rem;
+		cursor: pointer;
+		transition: all 250ms;
+		margin: 0 1rem 0 0;
+
+		&.aktiv {
+			img {
+				&.aktiv {
+					opacity: 1;
+					transform: translate(-50%, -50%) scale(1.2);
+				}
+				&.normal {
+					opacity: 0;
+				}
+			}
+		}
+		&:last-child {
+			margin: 0 0 0 0;
+		}
+		&:focus {
+			outline: none;
+		}
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 2rem;
+			height: 2rem;
+			transition: all 250ms;
+
+			&.aktiv {
+				opacity: 0;
+			}
+			&.normal {
+				opacity: 1;
+			}
+		}
+	}
+	.menu-slider-bg {
+		position: absolute;
+		top: 0.5rem;
+		left: 0.5rem;
+		z-index: 1;
+		width: 5rem;
+		height: 5rem;
+		border-radius: 5rem;
+		background-color: $second;
+		transition: all 250ms;
+	}
+}
