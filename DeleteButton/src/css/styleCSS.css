@@ -1,0 +1,81 @@
+* {
+	box-sizing: border-box;
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 10px;
+	background-color: #1b2431;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+body .delete-button,
+html .delete-button {
+	padding: 3rem;
+	width: 15rem;
+	height: auto;
+	background-color: #aa3333;
+	border-radius: 1.5rem;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all 250ms;
+}
+body .delete-button .empty,
+html .delete-button .empty {
+	z-index: 2;
+	transform: translateX(-100%);
+	border-radius: 0;
+	background-color: #ec5757;
+	width: 100%;
+	height: 100%;
+	transition: all 3000ms;
+}
+body .delete-button .delete-first-step,
+html .delete-button .delete-first-step {
+	z-index: 4;
+	background-color: #ec5757;
+}
+body .delete-button .delete-second-step,
+html .delete-button .delete-second-step {
+	z-index: 3;
+	opacity: 0;
+}
+body .delete-button div,
+html .delete-button div {
+	transition: all 250ms;
+	border-radius: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	color: white;
+	font-family: sans-serif;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+body .delete-button.aktive > .delete-first-step,
+html .delete-button.aktive > .delete-first-step {
+	opacity: 0;
+}
+body .empty.aktive,
+html .empty.aktive {
+	transform: translateX(0);
+}
+body .delete-second-step.aktive,
+html .delete-second-step.aktive {
+	opacity: 1;
+}
+
+.done {
+	background-color: rgba(0, 255, 0, 0.712);
+}
