@@ -1,0 +1,44 @@
+@import '_preset';
+
+.highscore {
+	width: 80%;
+	max-width: 30rem;
+	height: 10rem;
+	background-color: $ciBlue;
+	color: $second;
+	border-radius: 2rem;
+	padding: 1rem;
+	margin: 0 0 3rem 0;
+	font-size: 2rem;
+	display: flex;
+	flex-direction: row;
+	.image {
+		background-color: $second;
+		border-radius: 1.5rem;
+		img {
+			height: 100%;
+			aspect-ratio: 1 / 1;
+		}
+	}
+	.content {
+		padding: 1rem;
+		p {
+			margin: 0;
+			padding: 0;
+			&.points {
+				font-size: 3rem;
+				font-weight: 800;
+			}
+		}
+	}
+}
+button {
+	border: none;
+	cursor: pointer;
+	background-color: $ciRed;
+	padding: 1.5rem;
+	border-radius: 1rem;
+	img {
+		width: 3rem;
+	}
+}

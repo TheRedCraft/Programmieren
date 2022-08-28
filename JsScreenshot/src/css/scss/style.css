@@ -1,0 +1,62 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0c1016;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  color: #00fff1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.highscore {
+  width: 80%;
+  max-width: 30rem;
+  height: 10rem;
+  background-color: #00fff1;
+  color: #0c1016;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 0 0 3rem 0;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+.highscore .image {
+  background-color: #0c1016;
+  border-radius: 1.5rem;
+}
+.highscore .image img {
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+.highscore .content {
+  padding: 1rem;
+}
+.highscore .content p {
+  margin: 0;
+  padding: 0;
+}
+.highscore .content p.points {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: #ff00aa;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+button img {
+  width: 3rem;
+}/*# sourceMappingURL=style.css.map */

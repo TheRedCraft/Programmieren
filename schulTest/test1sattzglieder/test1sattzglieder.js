@@ -35,6 +35,18 @@ function addfrage(frage) {
 }
 
 
+function getdatafromServer() {
+    const booksRef = firebase.firestore().collection('Ergebnisse');
+    booksRef.get().then((snapshot) => {
+        const data = snapshot.docs.map((doc) => ({
+            data: doc.data()
+        }))
+        data2 = data['0']['data'];
+        console.log(data2);
+    })
+}
+
+
 setInterval(zeitsekunde, 1000);
 
 function definiereFragen() {
