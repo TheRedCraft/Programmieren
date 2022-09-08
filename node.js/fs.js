@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const readline = require('readline-sync')
+const readline = require("readline-sync");
 
 
 let currentpath = readline.question('PATH? ');
@@ -20,9 +20,9 @@ function processfile(file) {
     let extension = path.extname(file);
     console.log('Extension ist: '+ extension);
 
-    fs.mkdir(currentpath + extension, function(){
+    fs.mkdir(currentpath + "/" + extension, function(){
         console.log('Ordner wurde fertig erstellt!');
-        fs.rename(currentpath + file, currentpath + extension + '/' + file, copySucces);
+        fs.rename(currentpath + "/" + file, currentpath + "/" + extension + '/' + file, copySucces);
 
     });
 }
