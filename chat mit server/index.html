@@ -52,8 +52,10 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const database = getDatabase(app);
-
+If(localStorage.getItem("chatname") == "") {
         var myname = prompt('Wie heißt du?')
+} else {
+myname = localStorage.getItem("chatname")
         submit.addEventListener('click', (e) => {
           var message = document.getElementById('message').value;
           var name = myname;
