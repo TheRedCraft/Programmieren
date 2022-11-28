@@ -2,7 +2,8 @@
   "dependencies": {
     "firebase": "^8.10.1",
     "html2canvas": "^1.4.1",
-    "readline-sync": "^1.4.10"
+    "readline-sync": "^1.4.10",
+    "selenium-webdriver": "^4.6.1"
   },
   "devDependencies": {
     "prettier": "2.7.1"
