@@ -1,3 +1,4 @@
 neue Dateien in C:/Windows/System32
 
 np.bat
+kd.bat
