@@ -1,0 +1,57 @@
+$prime: rgb(255, 0, 0);
+
+
+
+body {
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+.text1 {
+    position: absolute;
+    font-size: 50px;
+    color: white;
+}
+.herz {
+
+    position: relative;
+    width: 50vw;
+    height: 49vw;
+    animation: Herzschlag infinite 3s ease-in-out;
+    &::after, &::before {
+        position: absolute;
+        content: "";
+        left: 25vw;
+        top: 0;
+        width: 25vw;
+        height: 48vw;
+        background-color: $prime;
+        border-radius: 15vw 15vw 0 0;
+    }
+    &::before {
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+    }
+    &::after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+    }
+}
+
+@keyframes Herzschlag {
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.5;
+    }
+    100% {
+        scale: 1;
+    }
+}

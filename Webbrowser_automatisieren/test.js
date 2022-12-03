@@ -14,15 +14,11 @@ async function opengoogle() {
 
     await driver.findElement(By.name('q')).sendKeys('test', Key.RETURN);
     await click('Stiftung Warentest | Unabhängig. Objektiv. Unbestechlich.');
-    setInterval(async function() {
-        await click('Einwilligen');
-    }, 2);
-    
-    setInterval(async function() {
-        if(driver.getCurrentUrl == "https://www.test.de/") {
+    for(i = 5; i > 0; i = i) {
+        if(driver.getCurrentUrl() == "https://test.de/") {
             await click('Geld');
         }
-    }, 2);
+    }
 }
 
 async function click(text) {
