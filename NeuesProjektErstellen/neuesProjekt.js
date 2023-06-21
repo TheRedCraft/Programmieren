@@ -1,7 +1,6 @@
 const fs = require("fs");
 const readline = require("readline-sync");
 
-const thisprojekt = "C:UsersPaulchenProgrammierenNeuesProjekt";
 
 let projektpath = readline.question("PATH? ");
 let projektname = readline.question("PROJEKTNAME? ");
